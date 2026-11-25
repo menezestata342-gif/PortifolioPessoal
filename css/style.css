@@ -8,11 +8,11 @@
   --color-bg-glass: rgba(10, 10, 11, 0.78);
 
   /* Cores destaque */
-  --color-accent: #C6F36B;
-  --color-accent-hover: #D4fa84;
-  --color-accent-dim: rgba(198, 243, 107, 0.12);
-  --color-accent-border: rgba(198, 243, 107, 0.35);
-  --color-accent-glow: rgba(198, 243, 107, 0.18);
+  --color-accent: #67d3e6;
+  --color-accent-hover: #72bfd6;
+  --color-accent-dim: rgba(96, 162, 216, 0.644);
+  --color-accent-border: rgba(43, 99, 151, 0.822);
+  --color-accent-glow: rgba(55, 122, 134, 0.685);
 
   /* Tipografia e hierarquia de contraste */
   --color-text-primary: #F4F4F6;
@@ -22,7 +22,7 @@
 
   /* Bordas Site */
   --color-border: rgba(255, 255, 255, 0.08);
-  --color-border-strong: rgba(255, 255, 255, 0.16);
+  --color-border-strong: rgba(99, 205, 238, 0.699);
 
   /* Espaçamentos & Geometria */
   --container-max: 1220px;
@@ -38,7 +38,7 @@
 
   /* Sombras & Elevação */
   --shadow-card: 0 20px 45px -20px rgba(0, 0, 0, 0.75);
-  --shadow-glow: 0 0 40px -10px rgba(198, 243, 107, 0.25);
+  --shadow-glow: 0 0 40px -10px rgb(60, 155, 233);
 
   /* Transições */
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
@@ -225,7 +225,7 @@ address {
 .info {
   padding-block: clamp(4rem, 8vw, 7rem);
   border-bottom: 1px solid var(--color-border);
-  background: radial-gradient(circle at 80% 25%, rgba(198, 243, 107, 0.11), transparent 45%);
+  background: radial-gradient(circle at 80% 25%, rgba(47, 105, 143, 0.651), transparent 45%);
 }
 
 .info-grid {
@@ -365,4 +365,11 @@ address {
   font-size: 0.88rem;
   color: var(--color-accent);
   overflow-x: auto;
+}
+.info-card{
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #2b444b;
+  border-radius: 15px;
+  background-color:#1c2f3b
 }
