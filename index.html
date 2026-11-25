@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nivaldo Junior - Desenvolvedor</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon.svg">
+
+  <!-- Fontes Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Folha de Estilo -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Link de acessibilidade para o teclado -->
+  <a href="#home" class="skip-link">Pular para a Home</a>
+
+  <!-- Navegação -->
+  <header id="topo" class="site-header" data-site-header>
+    <div class="container header-inner">
+      <a href="#home" class="brand-logo" aria-label="Nivaldo Junior - Página Inicial">
+        <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
+        <span class="brand-text">Nivaldo Junior<span class="brand-accent">.dev</span></span>
+      </a>
+
+      <!-- Controle checkbox invisível -->
+      <input
+        type="checkbox"
+        id="nav-toggle"
+        class="nav-toggle-input"
+        aria-label="Abrir ou fechar menu de navegação"
+        data-nav-checkbox
+      >
+      <label
+        for="nav-toggle"
+        class="nav-toggle-btn"
+        aria-controls="primary-navigation"
+        data-nav-toggle
+      >
+        <span class="hamburger-lines" aria-hidden="true"></span>
+        <span class="sr-only">Menu</span>
+      </label>
+
+      <nav
+        id="primary-navigation"
+        class="primary-nav"
+        aria-label="Navegação principal"
+        data-nav-menu
+      >
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#home" class="nav-link" data-nav-link>Início</a>
+          </li>
+          <li class="nav-item">
+            <a href="#sobre" class="nav-link" data-nav-link>Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a href="#habilidades" class="nav-link" data-nav-link>Habilidades</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projetos" class="nav-link" data-nav-link>Projetos</a>
+          </li>
+          <li class="nav-item">
+            <a href="#experiencia" class="nav-link" data-nav-link>Experiências</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contato" class="nav-link" data-nav-link>Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sessão Main -->
+  <main>
+    <!-- Principais Informações -->
+    <section id="home" class="info">
+      <div class="container info-grid">
+        <!-- Coluna de Apresentação -->
+        <div>
+          <span class="badge">● Disponível para novos projetos</span>
+          <p class="info-subtitle">
+            Olá, eu sou <strong>"Nome de vcs"</strong> — Desenvolvedor Full Stack
+          </p>
+          <h1 class="info-title">
+            "Frase de impacto!" <span>divide a frase</span>
+          </h1>
+          <p class="info-text">
+            "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."
+          </p>
+
+          <div class="info-actions">
+            <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+            <a href="#contato" class="btn btn-secondary">Entrar em contato</a>
+          </div>
+        </div>
+
+        <!-- Coluna da Direita: Cartão de Código Decorativo -->
+        <aside class="card code-card" aria-label="Resumo técnico">
+          <div class="code-dots">
+            <span></span><span></span><span></span>
+            <small>developer.config.js</small>
+          </div>
+          <pre class="code-block"><code>const desenvolvedor = {
+  nome: "Nome de vcs",
+  foco: "Full Stack Web",
+  stack: ["HTML5", "CSS3", "JavaScript", "SQL"],
+  disponivel: true
+};</code></pre>
+        </aside>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
